@@ -1,0 +1,12 @@
+.box{
+    width: 400px ;
+    height: 240px;
+    border: 2px solid chocolate;
+    overflow:scroll;
+}
+.box2{
+    width: 400px;
+    height: 200px;
+    border: 2px dotted cornflowerblue;
+    padding-bottom: 15px;
+}
