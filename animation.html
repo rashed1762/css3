@@ -6,10 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @keyframes sliding {
+            0%{
+                left:0;
+                top: 0;
+                background-color: lightsalmon;
+            }
+            50%{
+                left: 400px;
+                top: 150px;
+                background-color: magenta;
+            }
+            100%{
+                 left:800px;
+                 top: 0;
+                 background-color: mediumaquamarine;
+                
+            }
+        }
         .stage{
-            background-color: gray;
+            background-color: lightsalmon;
             height: 200px;
             min-width: 800px;
+            font-size: 60px;
+            
         
         }
         .ball{
@@ -17,11 +37,19 @@
             height: 100px;
             border-radius: 50%;
             background-color: green;
+            position: absolute;
+        }
+        .stage:hover .ball{
+            animation: sliding 5s ease 1s infinite  ;
+        }
+        h1{
+        margin-left: 550px;
         }
     </style>
 </head>
 <body>
    <div class="stage">
+       <h1>welcome</h1>
        <div class="ball"></div>
    </div>
 </body>
